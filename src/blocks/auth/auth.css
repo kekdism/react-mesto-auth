@@ -1,0 +1,14 @@
+.auth {
+  margin: 41px auto 0;
+
+  max-width: 358px;
+  width: calc(100vw - 38px);
+  color: white;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
+}
+@media screen and (max-width: 670px) {
+  .auth {
+    max-width: 260px;
+  }
+}

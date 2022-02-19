@@ -1,0 +1,11 @@
+.element {
+  font-family: 'Inter', Arial, sans-serif;
+  width: 282px;
+  height: 361px;
+  position: relative;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}

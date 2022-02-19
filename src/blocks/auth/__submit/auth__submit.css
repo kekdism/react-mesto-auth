@@ -1,0 +1,19 @@
+.auth__submit {
+  margin: 216px 0 0 0;
+  padding: 14px 0;
+  min-height: 50px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: black;
+  text-align: center;
+  transition: opacity 0.1s;
+  cursor: pointer;
+}
+
+.auth__submit:hover {
+  opacity: 0.85;
+}

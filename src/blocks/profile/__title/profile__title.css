@@ -1,0 +1,20 @@
+.profile__title {
+  font-family: 'Inter', Arial, sans-serif;
+  margin-left: 30px;
+  display: grid;
+  grid-template-areas:
+    'profile__name profile__edit-button'
+    'profile__description profile__description';
+  grid-gap: 8px 18px;
+}
+
+@media screen and (max-width: 670px) {
+  .profile__title {
+    margin-left: 0;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0;
+  }
+}

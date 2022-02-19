@@ -1,0 +1,18 @@
+.header__open-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url('../../../images/lines.svg') no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 21px;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .header__open-menu {
+    display: inline-block;
+  }
+}
