@@ -1,4 +1,4 @@
-import { serverUrl, token } from './constants';
+import { serverUrl } from './constants';
 
 class Api {
   constructor(data) {
@@ -77,7 +77,6 @@ class Api {
 export default new Api({
   baseUrl: serverUrl,
   headers: {
-    authorization: token,
     'Content-Type': 'application/json',
   },
 });

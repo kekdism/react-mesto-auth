@@ -46,5 +46,5 @@ export const userNameSelector = '.profile__name';
 export const userDescSelector = '.profile__description';
 export const userAvatarSelector = '.profile__image';
 export const cardTemplateId = '#element-template';
-export const serverUrl = 'https://mesto.nomoreparties.co/v1/cohort-33';
+export const serverUrl = 'https://kek-mesto-back.nomoredomains.work';
 export const token = '5e0c4a37-b5c9-4c9b-b297-290987370e01';

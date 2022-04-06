@@ -1,6 +1,8 @@
+import { serverUrl } from './constants.js'
+
 class AuthApi {
   constructor() {
-    this.BASE_URL = 'https://auth.nomoreparties.co';
+    this.BASE_URL = serverUrl;
   }
   async _checkStatus(response) {
     if (!response.ok) {
