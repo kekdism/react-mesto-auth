@@ -4,7 +4,7 @@ class Api {
   constructor(data) {
     this._baseUrl = data.baseUrl;
     this._headers = data.headers;
-    this._credentials = 'include',
+    this._credentials = 'include';
   }
 
   async _checkStatus(response) {
