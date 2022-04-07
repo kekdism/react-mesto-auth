@@ -4,6 +4,7 @@ class Api {
   constructor(data) {
     this._baseUrl = data.baseUrl;
     this._headers = data.headers;
+    this._credentials = 'include',
   }
 
   async _checkStatus(response) {
@@ -17,6 +18,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/cards/`, {
       method: 'GET',
       headers: this._headers,
+      credentials: this._credentials,
     });
     return await this._checkStatus(res);
   }
@@ -25,7 +27,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/users/${user}`, {
       method: 'GET',
       headers: this._headers,
-      credentials: 'include',
+      credentials: this._credentials,
     });
     return await this._checkStatus(res);
   }
@@ -34,6 +36,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/users/${user}`, {
       method: 'PATCH',
       headers: this._headers,
+      credentials: this._credentials,
       body: JSON.stringify(data),
     });
     return await this._checkStatus(res);
@@ -43,6 +46,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/users/${user}/avatar`, {
       method: 'PATCH',
       headers: this._headers,
+      credentials: this._credentials,
       body: JSON.stringify(data),
     });
     return await this._checkStatus(res);
@@ -52,6 +56,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/cards`, {
       method: 'POST',
       headers: this._headers,
+      credentials: this._credentials,
       body: JSON.stringify(data),
     });
     return await this._checkStatus(res);
@@ -62,6 +67,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
       method: method,
       headers: this._headers,
+      credentials: this._credentials,
     });
     return await this._checkStatus(res);
   }
@@ -70,6 +76,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/cards/${cardId}`, {
       method: 'DELETE',
       headers: this._headers,
+      credentials: this._credentials,
     });
     return await this._checkStatus(res);
   }

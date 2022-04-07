@@ -41,7 +41,7 @@ class AuthApi {
     const response = await fetch(`${this.BASE_URL}/users/me`, {
       method: 'GET',
       headers,
-      credentials: 'omit',
+      credentials: 'include',
     });
     return this._checkStatus(response);
   }
