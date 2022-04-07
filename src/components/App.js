@@ -114,9 +114,9 @@ function App() {
 
   const handleLogin = async (data) => {
     try {
-      const { token } = await AuthApi.login(data);
-      localStorage.setItem('token', token);
-      const { data: user } = await AuthApi.tokenValidation(token);
+      const { _id } = await AuthApi.login(data);
+      const { data: user } = await Api.getUserInfo(_id);
+      console.log(user);
       setLoggedUser(user);
       history.push('/');
     } catch (err) {

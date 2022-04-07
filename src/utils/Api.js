@@ -25,6 +25,7 @@ class Api {
     const res = await fetch(`${this._baseUrl}/users/${user}`, {
       method: 'GET',
       headers: this._headers,
+      credentials: 'include',
     });
     return await this._checkStatus(res);
   }

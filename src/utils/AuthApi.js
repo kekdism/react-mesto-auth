@@ -37,11 +37,11 @@ class AuthApi {
   async tokenValidation(token) {
     const headers = {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
     };
     const response = await fetch(`${this.BASE_URL}/users/me`, {
       method: 'GET',
       headers,
+      credentials: 'omit',
     });
     return this._checkStatus(response);
   }
