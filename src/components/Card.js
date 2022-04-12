@@ -4,6 +4,7 @@ export default function Card({ card, onCardClick, onLikeClick, onDeleteCard }) {
   const currentUser = useContext(CurrentUserContext);
   const isOwner = currentUser._id === card.owner._id;
   const isLiked = card.likes.some((like) => like._id === currentUser._id);
+  console.log(isLiked);
   const handleClick = () => {
     onCardClick(card);
   };
@@ -33,9 +34,8 @@ export default function Card({ card, onCardClick, onLikeClick, onDeleteCard }) {
         <div className="element__like">
           <button
             type="button"
-            className={`element__like-icon ${
-              isLiked && 'element__like-icon_active'
-            }`}
+            className={`element__like-icon ${isLiked && 'element__like-icon_active'
+              }`}
             onClick={handleLikeClick}
           ></button>
           <p className="element__like-counter">{card.likes.length}</p>

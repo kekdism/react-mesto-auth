@@ -46,5 +46,6 @@ export const userNameSelector = '.profile__name';
 export const userDescSelector = '.profile__description';
 export const userAvatarSelector = '.profile__image';
 export const cardTemplateId = '#element-template';
-export const serverUrl = 'https://kek-mesto-back.nomoredomains.work';
+export const serverUrl = 'http://localhost:3000';
 export const token = '5e0c4a37-b5c9-4c9b-b297-290987370e01';
+//'https://kek-mesto-back.nomoredomains.work'

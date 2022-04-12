@@ -33,18 +33,6 @@ class AuthApi {
     });
     return this._checkStatus(response);
   }
-
-  async tokenValidation(token) {
-    const headers = {
-      'Content-Type': 'application/json',
-    };
-    const response = await fetch(`${this.BASE_URL}/users/me`, {
-      method: 'GET',
-      headers,
-      credentials: 'include',
-    });
-    return this._checkStatus(response);
-  }
 }
 
 export default new AuthApi();

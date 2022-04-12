@@ -82,9 +82,7 @@ class Api {
   }
 }
 
-export default new Api({
-  baseUrl: serverUrl,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+export default Api;
+
+/*new Api(,
+});*/
